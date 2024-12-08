@@ -1,0 +1,73 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#192550",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "children": [
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 140,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "pkalc7zdin",
+      "leftColumn": 0,
+      "minHeight": 140,
+      "parentColumnSpace": 1,
+      "parentId": "6vyue3onq7",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 225,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "j9beryr6hh",
+      "widgetName": "Canvas1Copy1Copy"
+    }
+  ],
+  "displayName": "Stats Box",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5m7may5ry7",
+  "leftColumn": 48,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "originalBottomRow": 33,
+  "originalTopRow": 19,
+  "parentColumnSpace": 14.0625,
+  "parentId": "1r82sdzzav",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 9,
+  "type": "STATBOX_WIDGET",
+  "widgetId": "6vyue3onq7",
+  "widgetName": "Total_posts"
+}

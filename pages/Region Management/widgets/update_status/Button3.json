@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "tr5k5q6ipk",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  storeValue(\"provinceStatusUp\", Select3.selectedOptionValue === \"Bình thường\" ? true : false);\n\n  // Đóng modal ngay từ đầu\n  closeModal(update_status.name);\n\n  // Chạy Update_Province và các API liên tiếp\n  Update_Province.run()\n    .then(() => {\n      // Sau khi Update_Province thành công, chạy API_1\n      return Get_ward.run();\n    })\n    .then(() => {\n      // Sau khi API_1 thành công, chạy API_2\n      return Get_ward_normal.run();\n    })\n    .then(() => {\n      // Sau khi API_2 thành công, chạy API_3\n      return Select_district.run();\n    })\n    .then(() => {\n      // Sau khi API_3 thành công, chạy API cuối cùng\n      return Get_provice.run();\n    })\n    .then(() => {\n      // Đóng modal sau khi tất cả các API đã thành công\n      showAlert(\"Cập nhật thành công!\", \"success\");\n    })\n    .catch((error) => {\n      // Xử lý lỗi nếu bất kỳ API nào thất bại\n      showAlert(\"Đã xảy ra lỗi: \" + error.message, \"error\");\n    });\n}}\n",
+  "parentId": "fdfy0pr4pa",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Confirm",
+  "topRow": 14,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hzh3nvha77",
+  "widgetName": "Button3"
+}

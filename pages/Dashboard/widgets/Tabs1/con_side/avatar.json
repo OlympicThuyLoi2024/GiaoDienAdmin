@@ -1,0 +1,46 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 79,
+  "boxShadow": "none",
+  "defaultImage": "https://i.pinimg.com/736x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gaih7ja41v",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 96,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 84,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onClick": "{{navigateTo('Change Infomation', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 81,
+  "originalTopRow": 76,
+  "parentColumnSpace": 1.90673828125,
+  "parentId": "sba1bcx2ad",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 11,
+  "topRow": 75,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "1gzlp9m05k",
+  "widgetName": "avatar"
+}

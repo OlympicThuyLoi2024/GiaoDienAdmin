@@ -1,0 +1,6 @@
+{
+	"email": {{appsmith.store.emailStatus}},
+	"name": {{appsmith.store.nameStatus}},
+	"health": {{appsmith.store.healthStatus}},
+	"vaccine": {{appsmith.store.vaccinatedStatus}}
+}

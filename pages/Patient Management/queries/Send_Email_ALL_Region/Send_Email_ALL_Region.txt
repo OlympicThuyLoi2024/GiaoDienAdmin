@@ -1,0 +1,5 @@
+{
+	"email": {{appsmith.store.emailseachregion}},
+	"health": {{appsmith.store.healthStatus}},
+	"vaccine": {{appsmith.store.vaccinatedStatus}}
+}

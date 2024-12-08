@@ -1,0 +1,8 @@
+{
+	"data": {
+		"Title": {{Input3.text}},
+		"Content": {{RichTextEditor2.text}},
+		"Des": {{Input4.text}},
+		"PublishDate": {{moment().format("YYYY-MM-DD")}}
+	}
+}

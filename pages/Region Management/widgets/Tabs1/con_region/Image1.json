@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 78,
+  "boxShadow": "none",
+  "defaultImage": "https://www.mike.vn/wp-content/uploads/2017/06/Ban-do-Vietnam.gif",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "iw2tqgizam",
+  "leftColumn": 33,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 35,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "originalBottomRow": 78,
+  "originalTopRow": 21,
+  "parentColumnSpace": 15.861328125,
+  "parentId": "092jyk78ym",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 21,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "57ucpjm63s",
+  "widgetName": "Image1"
+}

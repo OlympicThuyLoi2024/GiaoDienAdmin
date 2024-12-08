@@ -1,0 +1,4 @@
+{
+	"health": {{appsmith.store.healthStatus}},
+	"vaccinated": {{appsmith.store.vaccinatedStatus}}
+}

@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 55,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5djg9pndre",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{ \n    storeValue(\"addstaffFullname\", inp_fullname.text);\n    storeValue(\"addstaffusername\", inp_username.text);\n    storeValue(\"addstaffaddress\", inp_address.text); // Đảm bảo trường địa chỉ đúng\n    storeValue(\"addstaffphone\", inp_phone.text);\n    storeValue(\"addstaffpass\", inp_pass.text);\n    storeValue(\"addstaffemail\", inp_email.text);\n    storeValue(\"addstaffrole\", SelectRole.selectedOptionValue);\n    storeValue(\"addstaffward\", Select3.selectedOptionValue);\n\n    Add_User.run()\n        .then(() => {\n            // Thành công, gọi Get_staff và đóng modal\n            return Get_staff.run();\n        })\n        .then((userData) => {\n            // Sau khi Get_staff thành công, bạn có thể xử lý dữ liệu user ở đây\n            console.log(\"User data:\", userData);\n            closeModal(mdl_add.name);\n        })\n        .catch((error) => {\n            // Xử lý lỗi nếu có\n            const errorMessage = error.response?.data?.message || error.message || \"Có lỗi xảy ra\";\n            showAlert(`Lỗi khi tạo người dùng: ${errorMessage}`, \"error\");\n        });\n}}\n",
+  "parentId": "nq134f6gj0",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Confirm",
+  "topRow": 51,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9bmmh5upu2",
+  "widgetName": "btn_confirm"
+}

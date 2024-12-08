@@ -1,0 +1,1 @@
+export default { setRoleId: () => { storeValue('roleId', 'brfrz0brwjcxqmbqaut8se0c'); } }

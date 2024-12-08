@@ -1,0 +1,7 @@
+{
+	"username": "{{inp_username.text}}",
+	"email": "{{inp_registerEmail.text}}",
+	"password": "{{inp_registerPassword.text}}",
+	"fullname": "{{inp_name.text}}",
+	"ward": "{{Select3.selectedOptionValue}}"
+}

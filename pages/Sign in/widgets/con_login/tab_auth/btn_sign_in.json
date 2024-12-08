@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "25qfdozime",
+  "leftColumn": 3,
+  "minWidth": 120,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "onClick": "{{\n    !inp_email.text || !inp_password.text\n        ? showAlert('Email and Password cannot be empty', 'error')\n        : API_Login.run(() => {\n            const jwt = API_Login?.data?.jwt; // Get JWT from API response\n            if (jwt) {\n                storeValue('jwt', jwt)\n                    .then(() => {\n                        // After storing JWT, call Api_UserDetail\n                        Api_UserDetail.run(() => {\n                            const userDetails = Api_UserDetail?.data;\n                            if (userDetails) {\n                                // Get documentId from role and ward\n                                const roleDocumentId = userDetails?.role?.documentId || \"N/A\";\n                                const wardDocumentId = userDetails?.ward?.documentId || \"N/A\";\n const signinDocumentId = userDetails?.id || \"N/A\";\n\n                                // Store role and ward document IDs\n                                storeValue('roleDocumentId', roleDocumentId);\n                                storeValue('wardDocumentId', wardDocumentId);\n\tstoreValue('signinDocumentId', signinDocumentId);\n\n                                console.log(\"Role Document ID:\", roleDocumentId);\n                                console.log(\"Ward Document ID:\", wardDocumentId);\n\n                                // Navigate based on role\n                                NavigationFunctions.navigateBasedOnRole();\n                            } else {\n                                showAlert(\"Unable to fetch user details\", 'error');\n                            }\n                        }, (error) => {\n                            const errorMessage = error?.error?.message || \"Error fetching user details\";\n                            showAlert(errorMessage, 'error');\n                            console.error(\"UserDetail API Error:\", error);\n                        });\n                    });\n            } else {\n                const errorMessage = API_Login?.data?.error?.message || \"Invalid Username/Password\";\n                showAlert(errorMessage, 'error');\n            }\n        }, (error) => {\n            const errorMessage = error?.error?.message || \"An unexpected error occurred.\";\n            showAlert(errorMessage, 'error');\n            console.error(\"Login Error:\", error);\n        });\n}}",
+  "originalBottomRow": 42,
+  "originalTopRow": 38,
+  "parentColumnSpace": 4.984344482421875,
+  "parentId": "qx4ypdied1",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "text": "Sign In",
+  "topRow": 38,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "697dgjtyu6",
+  "widgetName": "btn_sign_in"
+}

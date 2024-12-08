@@ -1,0 +1,72 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 95,
+  "boxShadow": "none",
+  "defaultOptionValue": "All ",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6rezitlh2o",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Tỉnh Thành Phố\n",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\n  (() => {\n    if (Select1.selectedOptionValue === \"All\") {\n      // Gọi API để lấy tất cả dữ liệu\n      Get_district.run().then(response => {\n        // Gán dữ liệu vào bảng\n        Table1.setData(response.data.data);\n      });\n    } else {\n      // Gọi API để lấy dữ liệu dựa trên documentId của tỉnh được chọn\n      Select_district.run({\n        documentId: Select1.selectedOptionValue // Truyền documentId của tỉnh được chọn\n      }).then(response => {\n        // Gán dữ liệu vào bảng\n        Table1.setData(response.data.data);\n      });\n    }\n  })();\n}}\n",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 96,
+  "originalTopRow": 88,
+  "parentColumnSpace": 11.2275390625,
+  "parentId": "092jyk78ym",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": "{{ \n    [ \n    ...Get_provice.data.data.map(item => ({ label: item.Name, value: item.documentId }))]\n}}",
+  "topRow": 87,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "szd5e40t0h",
+  "widgetName": "Select1"
+}

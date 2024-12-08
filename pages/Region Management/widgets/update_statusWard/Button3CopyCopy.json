@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "tr5k5q6ipk",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\nstoreValue(\"wardStatusUp\", Select3CopyCopy.selectedOptionValue === \"Bình thường\" ? true : false);\n\nUpdate_Ward.run()\n  .then(() => {\n    // Sau khi Update_Province thành công, chạy API_1\n\t\tcloseModal(update_statusWard.name);\n  })\n  .then(() => {\n    // Sau khi API_1 thành công, chạy API_2\n    return Get_ward.run();\n  })\n  .then(() => {\n    // Sau khi API_2 thành công, chạy API_3\n    return Get_ward_normal.run();\n  })\n  .then(() => {\n    // Đóng modal sau khi tất cả các API thành công\n\t\tSelect_ward.run();\n    showAlert(\"Cập nhật thành công!\", \"success\");\n  })\n  .catch((error) => {\n    // Xử lý lỗi nếu bất kỳ API nào thất bại\n    showAlert(\"Đã xảy ra lỗi: \" + error.message, \"error\");\n  });\n}}\n",
+  "parentId": "xs4ect5m4m",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Xác nhận",
+  "topRow": 19,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "yw9kfu3ilx",
+  "widgetName": "Button3CopyCopy"
+}

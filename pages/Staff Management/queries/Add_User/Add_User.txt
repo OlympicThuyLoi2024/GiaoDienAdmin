@@ -1,0 +1,11 @@
+{
+    "username": "{{appsmith.store.addstaffusername}}",
+    "email": "{{appsmith.store.addstaffemail}}",
+    "password": "{{appsmith.store.addstaffpass}}",
+    "confirmed": true,
+    "phone": "{{appsmith.store.addstaffphone}}",
+    "address": "{{appsmith.store.addstaffaddress}}",
+    "fullname": "{{appsmith.store.addstaffFullname}}",
+    "role": {{appsmith.store.addstaffrole}},  
+    "ward": "{{appsmith.store.addstaffward}}"
+}

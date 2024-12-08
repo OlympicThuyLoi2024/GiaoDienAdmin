@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674b2a4f1cc72f1a542578fc_ac686204-5acd-400a-95e8-5006fee3415b",
+  "id": "Patient Management_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Patient Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

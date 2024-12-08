@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 75,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "g76db3eo0q",
+  "leftColumn": 3,
+  "minWidth": 120,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 46,
+  "needsErrorInfo": false,
+  "onClick": "{{ \n!inp_name.text || !inp_username.text||!inp_registerPassword.text||!inp_registerEmail.text \n    ? showAlert('Không được để trống ô nào', 'error') \n    : API_Register.run(() => {\n        const successMessage = API_Register?.data?.message || \"Đăng ký thành công\";\n        if (successMessage) {\n            showAlert(successMessage, 'success');\n            JSObject1.goToLogin(); \n        } else {\n            const errorMessage = API_Register?.data?.error?.message || \"Đăng ký thất bại\";\n            showAlert(errorMessage, 'error');\n        }\n    }, (error) => {\n        const errorMessage = error?.error?.message || \"An unexpected error occurred.\";\n        showAlert(errorMessage, 'error');\n        console.error(\"Registration Error:\", error);\n    })\n}}\n",
+  "originalBottomRow": 75,
+  "originalTopRow": 71,
+  "parentColumnSpace": 4.984344482421875,
+  "parentId": "8gx4z3nhga",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "text": "Sign Up\n",
+  "topRow": 71,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "am0czzd2ca",
+  "widgetName": "btn_sign_up"
+}

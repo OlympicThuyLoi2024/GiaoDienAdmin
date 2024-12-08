@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 48,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "yyedre97kc",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Quận huyện",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 41,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 34,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\n  (() => {\n\n      // Gọi API để lấy dữ liệu dựa trên documentId của tỉnh được chọn\n      Select_ward.run({\n        documentId: Select2.selectedOptionValue // Truyền documentId của tỉnh được chọn\n      })\n    }\n  )();\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 10.5625,
+  "parentId": "nq134f6gj0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "serverSideFiltering": false,
+  "sourceData": "{{ \n    [ \n    ...Select_district.data.data.map(item => ({ label: item.Name, value: item.documentId }))]\n}}",
+  "topRow": 41,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "pdrcbrk5an",
+  "widgetName": "Select2"
+}
