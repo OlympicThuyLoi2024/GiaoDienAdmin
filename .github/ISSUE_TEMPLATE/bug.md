@@ -1,7 +1,7 @@
 ---
 name: Bug
 about: Việc báo cáo bug sẽ giúp ứng dụng của chúng tôi tốt hơn
-title: ''
+title: BUG
 labels: ''
 assignees: ''
 
