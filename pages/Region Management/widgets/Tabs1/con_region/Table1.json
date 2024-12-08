@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 147,
+  "bottomRow": 146,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -621,7 +621,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{\nSelect_district.data.data; \n}}\n",
   "textSize": "0.875rem",
-  "topRow": 96,
+  "topRow": 95,
   "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

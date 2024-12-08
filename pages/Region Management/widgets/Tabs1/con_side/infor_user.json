@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 70,
+  "bottomRow": 68,
   "disableLink": true,
   "dynamicBindingPathList": [
     {
@@ -34,7 +34,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 87,
   "needsErrorInfo": false,
-  "originalBottomRow": 69,
+  "originalBottomRow": 70,
   "originalTopRow": 64,
   "overflow": "NONE",
   "parentColumnSpace": 1.90673828125,
@@ -44,7 +44,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "TuanAnh\nadmin@gmail.com",
+  "text": "Xin chào ",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
   "topRow": 64,
