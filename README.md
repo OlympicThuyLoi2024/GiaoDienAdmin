@@ -48,7 +48,7 @@ Giao diện  của hệ thống SafeZone được xây dựng bằng nền tản
 <a href="https://github.com/OlympicThuyLoi2024/GiaoDienAdmin/issues/new?assignees=&labels=&projects=&template=bug.md&title=BUG">Bug Report ⚠️
 </a>
 
-<a href="https://github.com/OlympicThuyLoi2024/GiaoDienUser/issues/new?assignees=&labels=&projects=&template=feature_template.md&title=Feature">Request Feature 👩‍💻</a>
+<a href="https://github.com/OlympicThuyLoi2024/GiaoDienAdmin/issues/new?assignees=&labels=&projects=&template=feature_template.md&title=Feature">Request Feature 👩‍💻</a>
 
 Nếu bạn muốn đóng góp cho dự án, hãy đọc [CONTRIBUTING.md](.github/CONTRIBUTING.md) để tìm hiểu thêm chi tiết.
 
