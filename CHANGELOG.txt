@@ -1,1 +1,14 @@
+Changelogs
 
+v1.0
+- Giao diện đăng nhập
+- Giao diện đăng ký
+- Giao diện trang chủ
+- Giao diện quản lý khu vực
+- Giao diện quản lý người dân
+- Giao diện quản lý nhân viên
+- Giao diện cập nhật thông tin người dân
+- Giao diện thông tin cá nhân
+- Giao diện quản lý bài báo
+- Giao diện cập nhật thông tin nhân viên
+- Giao diện cập nhật khu vực
