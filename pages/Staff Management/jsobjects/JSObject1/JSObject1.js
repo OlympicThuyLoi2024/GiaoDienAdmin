@@ -1,6 +1,6 @@
 export default {
 	checkAccess: () => {
-		const allowedRoles = 'brfrz0brwjcxqmbqaut8se0c';
+		const allowedRoles = 'ewkqotn2otvmvmpc7lv03pnc';
 		const currentRole = appsmith.store.roleDocumentId;
 
 		if (!allowedRoles.includes(currentRole)) {
