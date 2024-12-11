@@ -44,7 +44,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "Xin chào",
+  "text": "Xin chào ban",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
   "topRow": 64,
